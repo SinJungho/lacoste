@@ -1,13 +1,13 @@
 @import "css/reset.css";
 
 body{
-    
+    height: 100vh;
 }
 
 .header{
     margin: 0 52px;
     height: 86px;
-    width: 100%;
+    width: 94%;
     background-color: #fff;
     /* margin-top: 25px; */
 }
