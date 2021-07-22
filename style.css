@@ -1,194 +1,70 @@
 @import "css/reset.css";
+@import "css/header.css";
 
 body{
     height: 1000vh;
+    
 }
 
-.header{
-    margin: 0 52px;
-    height: 86px;
-    width: 94%;
-    background-color: #fff;
-    /* margin-top: 25px; */
+::selection{
+    background-color: #105a33;
+    color: white;
+    text-shadow: none;
 }
 
-.header__header{
-    display: flex;
-    width: 100%;
-    height: 28px;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 25px;
+/* season-off */
+
+.season-off{
+    margin-left: 52px;
+    margin-bottom: 80px;
 }
 
-.header__header-list ul{
-    display: flex;
-}
-
-.header__header-list ul li{
-    margin-right: 40px;
-}
-
-.header__header-list ul li a{
-    color: #000;
-    text-decoration: none;
-}
-
-.header__header-icons a{
-    margin-right: 26px; 
-}
-
-.header__header-icons a i{
-    color: #000;
-}
-
-/* main */
-
-.main-img{
-    display: flex;  
-}
-
-.main-img__frist{
-    position: relative;
-    width: 100%;
-    height: 523px;
-}
-
-.main-img__frist img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-
-.main-img__frist-title{
-    color: #fff;
-    font-size: 51px;
+.season-off__title{
     font-weight: 600;
-    position: absolute;
-    top: 160px;
-    margin-left: 52px;
-    width: 570px;
-    line-height: 59px;
+    font-size: 26px;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
-.main-img__frist-subtitle{
-    color: #fff;
-    position: absolute;
-    top: 285px;
-    margin-left: 52px;
-    margin-bottom: 27px;
-    width: 570px;
-    display: block;
+.bx-viewport{
+    height: 452px;
 }
 
-.main-img__frist-btn{
-    background-color: #fff;
-    color: #000;
+.bxslider {
     display: flex;
-    width: 140px;
-    height: 44px;
-    border-radius: 20px;
-    position: absolute;
-    top: 329px;
-    margin-left: 52px;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease-in-out;
-}
-
-.main-img__frist-btn:hover{
-    background-color: black;
-    color: #fff;
-}
-
-@keyframes aniArrow {
-    from{
-        opacity: 1;
-        transform: translateY(30px);
-    }to{
-        opacity: 0;
-    }
-}
-
-.main-img__arrow{
-    position: absolute;
-    bottom: 14%;
-    left: 47%;
-    transform: translateY(50px);
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    transition: all 0.5s;
-    z-index: 1;
-    animation: aniArrow 1.5s linear infinite;
-    will-change: opacity, transform;
-}
-
-.main-img__arrow i{
-    font-size: 28px;
-    color: #fff;
-}
-
-/* main second */
-
-.main-img__sec{
-    position: relative;
-    height: 420px;
-}
-
-.main-img__sec img{
-    object-fit: cover;
     width: 100%;
+    margin: 0 auto;
+    margin-left: 52px;
     height: 100%;
 }
-/* mt 210px */
-.main-img__sec-title{
-    color: #fff;
-    font-size: 51px;
-    font-weight: 600;
-    position: absolute;
-    top: 160px;
-    margin-left: 52px;
-    width: 570px;
-    line-height: 59px;
+.bx-wrapper{
+    margin: 0 !important;
+}
+.bx-wrapper img{
+    width: 305px;
+    height: 425px;
 }
 
-.main-img__sec-subtitle{
-    color: #fff;
-    position: absolute;
-    top: 227px;
-    margin-left: 52px;
-    margin-bottom: 27px;
-    width: 570px;
+.bxslider li a span{
     display: block;
+    margin-top: 10px;
+    color: gray;
+    text-decoration: underline gray;
 }
 
-.main-img__sec-btn-pos{
-    display: flex;
-}
-
-.main-img__sec-btn{
-    background-color: #fff;
-    color: #000;
-    display: flex;
-    width: 140px;
-    height: 44px;
-    border-radius: 20px;
+.bx-wrapper .bx-controls-direction a{
     position: absolute;
-    top: 266px;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease-in-out;
-    margin-left: 52px;
+    top: -10% !important;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 8 !important;
 }
 
-.main-img__sec-btn:last-child{
-    position: absolute;
-    left: 170px;
+.bx-wrapper .bx-prev {
+    left: 1020px !important;
+    background: url(images/controls.png) no-repeat 0 -32px;
 }
 
-.main-img__sec-btn:hover{
-    background-color: black;
-    color: #fff;
-}
