@@ -23,3 +23,85 @@ body{
     font-size: 24px;
     margin-bottom: 33px;
 }
+
+.lacoste-event__banner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1164px;
+}
+
+.lacoste-event__banner-column img{
+    width: 556px;
+    height: 556px;
+}
+
+.lacoste-event__banner-column{
+    position: relative;
+    margin-bottom: 52px;
+    margin-right: 52px;
+}
+
+.lacoste-event__banner-column:nth-child(even){
+    margin-right: 0px;
+}
+
+.lacoste-event__banner-margin{
+    margin-right: 52px;
+    margin-bottom: 52px;
+}
+
+.lacoste-event__banner-info{
+    position: absolute;
+    z-index: 99;
+    bottom: 60px;
+    left: 52px;
+}
+
+.lacoste-event__title{
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+    width: 355px;
+    margin-bottom: 14px;
+}
+
+.lacoste-event__subtitle{
+    color: #000;
+    width: 355px;
+    /* line-height: 42px; */
+    margin-bottom: 27px;
+    display: block;
+}
+
+.lacoste-event__btn{
+    background-color: #000;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: #fff;
+    display: flex;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.lacoste-event__btn:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.color-resv{
+    color: #fff;
+}
+
+.color-resv-btn{
+    background-color: white;
+    color: #000;
+}
+
+.color-resv-btn:hover{
+    background-color: black;
+    color: #fff;
+}
