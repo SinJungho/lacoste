@@ -1,0 +1,67 @@
+/* season-off */
+
+.season-off{
+    margin-left: 52px;
+    margin-bottom: 80px;
+}
+
+.season-off__title{
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+
+/* banner */
+.season-off__banner{
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.season-off__banner img{
+    border: 1px dotted rgba(0, 0, 0, .3);
+    object-fit: cover;
+    width: 710px;
+    height: 50%;
+}
+
+.season-off__banner-colunm{
+    margin-left: 52px;
+    position: absolute;
+    top: 13%;
+    right: 95px;
+}
+
+.season-off__title{
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+    width: 355px;
+    line-height: 42px;
+}
+
+.season-off__subtitle{
+    color: #000;
+    margin-bottom: 27px;
+    width: 300px;
+    display: block;
+}
+
+.season-off__btn{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.season-off__btn:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
