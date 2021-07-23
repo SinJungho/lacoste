@@ -11,17 +11,49 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/slide.js"></script>
+    <script src="js/inside-bxslider.js"></script>
     <style>
         .bx-wrapper {
             border: none !important;
-            background:#fbfbfb;
+            /* background:#fbfbfb; */
             box-shadow:none !important;
         }
         .bxslider li{
             width: 305px !important;
             margin-right: 52px !important;
         }
-        
+    
+        .inside-slider__bxslider img{
+            width: 658px !important;
+            height: 492px !important;
+            padding-top: 102px;
+            margin-left: 52px;
+            margin-bottom: 30px;
+        }
+
+        .inside-slider__bxslider{
+            
+        }
+
+        .inside-slider__bxslider .inside-slider__bxslider-first{
+            background-color: #105a33 !important;
+        }
+
+        .inside-slider__bxslider .inside-slider__bxslider-sec{
+            background-color: #DFCFB6 !important;
+        }
+
+        .inside-slider__bxslider .inside-slider__bxslider-third{
+            background-color: #EAE9E9 !important;
+        }
+
+        .inside-slider__bxslider .inside-slider__bxslider-four{
+            background-color: #E2CCC4 !important;
+        }
+
+        .inside-slider__bxslider .inside-slider__bxslider-five{
+            background-color: #565C55 !important;
+        }
     </style>
 </head>
 <body>
@@ -186,6 +218,46 @@
                 </div>
             </div>
         </div>  
+        <!-- lacoste inside -->
+        <div class="inside-slider">
+            <div class="inside__slider-title">
+                <div class="inside__slider-title__column">
+                    <h4>Lacoste Inside</h4>
+                    <img src="img/logo-white.png" alt="logo" />
+                </div>
+            </div>
+            <ul class="inside-slider__bxslider">
+                <li class="inside-slider__bxslider-first">
+                    <a href="#">
+                        <img src="img/main/inside-img1.webp" alt="" srcset="">
+                    </a>
+                </li>
+                <li class="inside-slider__bxslider-sec">
+                    <a href="#">
+                        <img src="img/main/inside-img2.webp" alt="" srcset="">
+                    </a>
+                </li>
+                <li class="inside-slider__bxslider-third">
+                    <a href="#">
+                        <img src="img/main/inside-img3.webp" alt="" srcset="">
+                    </a>
+                </li>
+                <li class="inside-slider__bxslider-four">
+                    <a href="#">
+                        <img src="img/main/inside-img4.webp" alt="" srcset="">
+                    </a>
+                </li>
+                <li class="inside-slider__bxslider-five">
+                    <a href="#">
+                        <img src="img/main/inside-img5.webp" alt="" srcset="">
+                    </a>
+                </li>
+            </ul>
+            <p class="inside-slider__btn">
+                <span class="inside-slider__btn-next"></span>
+                <span class="inside-slider__btn-prev"></span>
+            </p>
+        </div>
     </div>
 </body>
 </html>

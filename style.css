@@ -2,6 +2,7 @@
 @import "css/header.css";
 @import "css/season-off.css";
 @import "css/slide.css";
+@import "css/lacoste-event.css";
 
 body{
     height: 1000vh;
@@ -14,94 +15,64 @@ body{
     text-shadow: none;
 }
 
-.lacoste-event{
-    margin-left: 52px;
+.inside{
+    background-color: seagreen;
 }
 
-.lacoste-event__title{
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 33px;
-}
-
-.lacoste-event__banner{
+.inside-slider{
     display: flex;
     flex-wrap: wrap;
-    width: 1164px;
-}
-
-.lacoste-event__banner-column img{
-    width: 556px;
-    height: 556px;
-}
-
-.lacoste-event__banner-column{
     position: relative;
-    margin-bottom: 52px;
-    margin-right: 52px;
 }
 
-.lacoste-event__banner-column:nth-child(even){
-    margin-right: 0px;
-}
-
-.lacoste-event__banner-margin{
-    margin-right: 52px;
-    margin-bottom: 52px;
-}
-
-.lacoste-event__banner-info{
-    position: absolute;
-    z-index: 99;
-    bottom: 60px;
-    left: 52px;
-}
-
-.lacoste-event__title{
-    color: #000;
-    font-size: 26px;
-    font-weight: 600;
-    width: 355px;
-    margin-bottom: 14px;
-}
-
-.lacoste-event__subtitle{
-    color: #000;
-    width: 355px;
-    /* line-height: 42px; */
-    margin-bottom: 27px;
-    display: block;
-}
-
-.lacoste-event__btn{
-    background-color: #000;
-    border: 1px solid rgba(0, 0, 0, .3);
-    color: #fff;
+.inside__slider-title{
+    margin-left: 52px;
+    margin-bottom: 28px;
     display: flex;
-    width: 140px;
-    height: 40px;
-    border-radius: 20px;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    transition: 0.3s ease-in-out;
+    position: absolute;
+    top: 50px;
+    z-index: 99;
 }
 
-.lacoste-event__btn:hover{
-    background-color: #fff;
-    color: #000;
-    border: 1px solid rgba(0, 0, 0, .3);
+.inside__slider-title h4{
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 20px;
 }
 
-.color-resv{
-    color: #fff;
+.inside__slider-title__column{
+    display: flex;
+    
 }
 
-.color-resv-btn{
-    background-color: white;
-    color: #000;
+.inside-slider__bxslider{
+    background-color: #0F3D23;
+
 }
 
-.color-resv-btn:hover{
-    background-color: black;
-    color: #fff;
+.inside-slider__bxslider li{
+    width: 100%;
 }
+
+.bx-wrapper .bx-pager {
+    text-align: center !important;
+    font-size: 30px !important;
+    font-family: Arial !important;
+    font-weight: bold !important;
+    color: #666 !important;
+    padding-top: 20px !important;
+    position: absolute !important;
+    top: -18% !important;
+    right: 72px !important;
+}
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    width: 5% !important; 
+    top: -18%;
+    font-size: 30px;
+}
+
