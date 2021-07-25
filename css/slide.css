@@ -17,6 +17,8 @@
     height: 425px;
 }
 
+
+
 .bxslider li a span{
     display: block;
     margin-top: 10px;
@@ -38,4 +40,8 @@
 .bx-wrapper .bx-prev {
     left: 1020px !important;
     background: url(images/controls.png) no-repeat 0 -32px;
+}
+
+.inside__bx-next, inside__bx-prev{
+    position: absolute;
 }

@@ -1,0 +1,21 @@
+/* bottom icon menu */
+.bottom__icon-menu{
+    display: flex;
+    height: 116px;
+    /* width: 100%; */
+    width: 880px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.bottom__icon-menu__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom__icon-menu__column span{
+    margin-top: 15px;
+    font-size: 14px;
+}

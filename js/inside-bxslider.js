@@ -12,6 +12,11 @@ $(document).ready(function(){
             auto: false,        // 자동 실행 여부
             autoHover: true,   // 마우스 호버시 정지 여부
             controls: true,    // 이전 다음 버튼 노출 여부
+            
+            onBeforeSlide: function(currentSlide, totalSlides, currentSlideHtmlObject){
+                $(' .bx-controls-direction > a').removeClass('bx-prev__pos');   
+                 $(currentSlideHtmlObject).addClass('bx-prev__pos');
+            }     
         });
       });
   });
@@ -25,3 +30,8 @@ $('.inside-slider__btn-prev').on('click', function () {
     mySlider.goToPrevSlide();  //이전 슬라이드 배너로 이동
     return false;              //<a>에 링크 차단
 });
+
+$(function(){
+    var btn_pos = $('.bx-prev');
+    $('.bx-wrapper .bx-controls-direction a').addClass('bx-prev__pos');
+})
